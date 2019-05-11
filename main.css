@@ -52,6 +52,9 @@ form {
   grid-row: 5/5;
   background-color: #002C91;
   color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 #shipResult {
