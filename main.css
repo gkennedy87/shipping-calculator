@@ -1,0 +1,19 @@
+body {
+  background-color: rgba(0, 0, 150, 0.5);
+  
+}
+
+.container{
+  background-color: rgba(175,175,150,0.5);
+  height: 300px;
+  width: 300px;
+  display:block;
+  margin: auto;
+  margin-top: 10em;
+  padding-top: 5em;
+}
+
+.resH2 {
+  color: white;
+
+}

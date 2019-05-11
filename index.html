@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+    <title>Shipping Calculator</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <form class="calc" action="index.html" method="post">
+        <select class="productType" name="productType" id="productList" placeholder="Choose Your Product">
+          <option value="Cellphone">Cellphone</option>
+          <option value="Books">Books</option>
+          <option value="Bath products">Bath products</option>
+          <option value="Beauty Products">Beauty Products</option>
+          <option value="TV">TV</option>
+        </select>
+        <br>
+        <input type="text" name="pkgCost" value ="" id="pkgCost" placeholder="Package Cost">
+        <br>
+        <input type="text" name="pkgWeight" value="" id="pkgWeight" placeholder="Package Weight">
+        <br>
+        <button type="button" name="submit" id="submitBtn">Submit</button><br>
+        <h2 class="results"id="shipResult"></h2><br>
+        <h2 class="results"id="custResult">
+      </form>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="calc.js"></script>
+  </body>
