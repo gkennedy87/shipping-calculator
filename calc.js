@@ -9,7 +9,7 @@ $(document).ready(function(){
   $('button').on('click',function() {
     let pkgWeight = document.getElementById('pkgWeight').value;
     let pkgCost = document.getElementById('pkgCost').value;
-
+//Calculate Customs Fees based on product category
     function calcCustoms(){
       switch (chosenProduct) {
         case "Cellphone":
@@ -36,13 +36,14 @@ $(document).ready(function(){
 
       }
     }
-
+//Calculate shipping fees based on example from Amazon Seller Central
     function calcShipping() {
       shipFee = (pkgWeight*0.25)+4;
-      console.log("the shipping fee is $"+shipFee);
       document.getElementById('shipResult').innerHTML = "Shipping Fee: $"+shipFee;
 
     }
+
+//test for weights and cost, run functions if passed
     if (pkgWeight.length == 0) {
       alert('Please enter a weight');
     } else {
@@ -54,7 +55,5 @@ $(document).ready(function(){
     } else {
       calcCustoms();
     }
-  //  calcShipping();
-  //  calcCustoms();
   })
 })

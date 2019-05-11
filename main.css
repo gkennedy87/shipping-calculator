@@ -1,19 +1,29 @@
 body {
   background-color: rgba(0, 0, 150, 0.5);
-  
+
 }
 
 .container{
-  background-color: rgba(175,175,150,0.5);
-  height: 300px;
-  width: 300px;
-  display:block;
+  background-color: #fff;
+  display: block;
+  width: 500px;
   margin: auto;
   margin-top: 10em;
-  padding-top: 5em;
+  padding-top: 1em;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
 }
 
-.resH2 {
-  color: white;
+.formTitle {
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  display: content;
+}
 
+.productType {
+  margin-left: auto;
+  margin-right: auto;
 }
