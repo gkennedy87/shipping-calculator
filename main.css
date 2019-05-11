@@ -1,29 +1,67 @@
 body {
-  background-color: rgba(0, 0, 150, 0.5);
+  background-color: rgba(26, 95, 255, 1);
 
 }
 
 .container{
   background-color: #fff;
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: 72px 40px 40px 40px 40px 40px 40px;
+  grid-row-gap: 10px;
+  height: 500px;
   width: 500px;
   margin: auto;
-  margin-top: 10em;
-  padding-top: 1em;
+  margin-top: 6em;
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
 }
 
 .formTitle {
-  margin-left: auto;
-  margin-right: auto;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  place-self: center stretch;
 }
 form {
-  display: content;
+  display: contents;
 }
 
 .productType {
-  margin-left: auto;
-  margin-right: auto;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row: 2/2;
+}
+#pkgCost {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row:3/3;
+}
+
+#pkgWeight {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row: 4/4;
+}
+
+#submitBtn {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row: 5/5;
+  background-color: #002C91;
+  color: white;
+}
+
+#shipResult {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row: 6/6;
+}
+
+#custResult {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row:7/7;
 }

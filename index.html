@@ -5,8 +5,9 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="formTitle">Shipping Calculator</h1>
+    <!--  <h1 class="formTitle">Shipping Calculator</h1>-->
       <form class="calc" action="index.html" method="post">
+        <h1 class="formTitle">Shipping Calculator</h1>
         <select class="productType" name="productType" id="productList" placeholder="Choose Your Product">
           <option value="Cellphone">Cellphone</option>
           <option value="Books">Books</option>
@@ -14,14 +15,11 @@
           <option value="Beauty Products">Beauty Products</option>
           <option value="TV">TV</option>
         </select>
-        <br>
         <input type="text" name="pkgCost" value ="" id="pkgCost" placeholder="Package Cost">
-        <br>
         <input type="text" name="pkgWeight" value="" id="pkgWeight" placeholder="Package Weight">
-        <br>
-        <button type="button" name="submit" id="submitBtn">Submit</button><br>
-        <p class="results"id="shipResult"></p><br>
-        <p class="results"id="custResult"></p>
+        <button type="button" name="submit" id="submitBtn">Submit</button>
+        <h3 id="shipResult"></h3>
+        <h3 id="custResult"></h3>
       </form>
     </div>
     <script
